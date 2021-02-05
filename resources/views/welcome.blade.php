@@ -16,7 +16,9 @@
                 </div>
                 <div class="col-6">
                     <div id="app">
-                        <example-component></example-component>
+                        <example-component>
+                        
+                        </example-component>
                     </div>
                 </div>
             </div>
