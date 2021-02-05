@@ -10,12 +10,14 @@
     <body>
 
         <div class="container">
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-6">
                     <h1>Test</h1>
                 </div>
                 <div class="col-6">
-                    <h2>Test</h2>
+                    <div id="app">
+                        <example-component></example-component>
+                    </div>
                 </div>
             </div>
         </div>
