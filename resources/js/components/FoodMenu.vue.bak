@@ -1,0 +1,87 @@
+<template>
+  <div class="row">
+    <div class="col-8">
+      <h3>Nested draggable</h3>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          name="product"
+          id="newCategory"
+        />
+        <div class="input-group-append">
+          <div class="input-group">
+            <button
+              @click="addCategory"
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Nieuwe categorie
+            </button>
+          </div>
+
+        </div>
+      </div>
+      <nested-draggable :products="list" />
+    </div>
+    
+    <rawDisplayer class="col-3" :value="list" title="List" />
+  </div>
+</template>
+
+<script>
+import nestedDraggable from './infra/nested'
+import rawDisplayer from './infra/raw-displayer'
+
+export default {
+  name: 'food-menu',
+  display: 'Nested',
+  order: 15,
+  components: {
+    nestedDraggable,
+    rawDisplayer,
+  },
+  methods: {
+    addCategory() {
+      this.list.push({
+        'name': document.querySelector("#newCategory").value,
+        'type': 'category',
+        'products': [],
+        'coverImg' : ''
+      });
+    },
+  },
+  data() {
+    return {
+      categoryName: '',
+      categories: ['patat', 'italiaanse pizza', 'kebab'],
+      list: [
+        {
+          name: 'Italiaanse pizza\'s',
+          products: [
+            {
+              name: 'task 2',
+              products: [],
+            },
+          ],
+        },
+        {
+          name: 'Patat',
+          products: [
+            {
+              name: 'task 4',
+              products: [],
+            },
+          ],
+        },
+        {
+          name: 'task 5',
+          products: [],
+        },
+      ],
+    }
+  },
+}
+</script>
+<style scoped></style>

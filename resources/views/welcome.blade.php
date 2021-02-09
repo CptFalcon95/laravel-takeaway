@@ -11,14 +11,9 @@
 
         <div class="container">
             <div class="row mt-5">
-                <div class="col-6">
-                    <h1>Test</h1>
-                </div>
-                <div class="col-6">
+                <div class="col-12">
                     <div id="app">
-                        <example-component>
-                        
-                        </example-component>
+                        <food-menu></food-menu>
                     </div>
                 </div>
             </div>
