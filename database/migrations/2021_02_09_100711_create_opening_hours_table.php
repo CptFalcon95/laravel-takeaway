@@ -15,7 +15,7 @@ class CreateOpeningHoursTable extends Migration
     {
         Schema::create('opening_hours', function (Blueprint $table) {
             $table->id();
-            $table->foreign('business_id')->references('id')->on('business');
+            $table->foreignId('business_id')->constrained();
             $table->tinyInteger('dow');
             $table->char('open', 5);
             $table->char('close', 5);

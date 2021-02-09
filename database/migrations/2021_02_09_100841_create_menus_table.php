@@ -15,8 +15,8 @@ class CreateMenusTable extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('business_id');
-            $table->varchar('data', 255);
+            $table->foreignId('business_id')->constrained();
+            $table->string('data', 255);
         });
     }
 
