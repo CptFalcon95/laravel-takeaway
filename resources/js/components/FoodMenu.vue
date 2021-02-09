@@ -36,6 +36,7 @@
         <div class="list-group-item" v-for="element in list" :key="element.name">
           {{ element.name }}
           <button>Add Product</button>
+          <button>Delete Category</button>
         </div>
       </draggable>
     </div>

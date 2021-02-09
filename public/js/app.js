@@ -1929,6 +1929,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 var id = 1;
@@ -42022,7 +42023,9 @@ var render = function() {
                 { key: element.name, staticClass: "list-group-item" },
                 [
                   _vm._v("\n        " + _vm._s(element.name) + "\n        "),
-                  _c("button", [_vm._v("Add Product")])
+                  _c("button", [_vm._v("Add Product")]),
+                  _vm._v(" "),
+                  _c("button", [_vm._v("Delete Category")])
                 ]
               )
             }),
