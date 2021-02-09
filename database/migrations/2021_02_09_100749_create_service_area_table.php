@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateServiceAreasTable extends Migration
+class CreateServiceAreaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,8 +15,8 @@ class CreateServiceAreasTable extends Migration
     {
         Schema::create('service_areas', function (Blueprint $table) {
 
-            $table->foreign('postcode_id')->references('id')->on('postcodes');
-            $table->foreign('business_id')->references('id')->on('business');
+            $table->foreignId('postcode_id')->constrained();
+            $table->foreignId('business_id')->constrained();
         });
     }
 

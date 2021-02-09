@@ -14,8 +14,8 @@ class CreateBusinessTagsTable extends Migration
     public function up()
     {
         Schema::create('business_tags', function (Blueprint $table) {
-            $table->foreign('business_id')->references('id')->on('business');
-            $table->foreign('tag_id')->references('id')->on('tags');
+            $table->foreignId('business_id')->constrained();
+            $table->foreignId('tag_id')->constrained();
         });
     }
 
