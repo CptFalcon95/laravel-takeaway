@@ -36,7 +36,7 @@
         <div class="list-group-item" v-for="element in list" :key="element.name">
           {{ element.name }}
           <button>Add Product</button>
-          <button>Delete Category</button>
+          <button @click="deleteCategory(element.id)">Delete Categorys</button>
         </div>
       </draggable>
     </div>
@@ -60,11 +60,7 @@ export default {
   data() {
     return {
       enabled: true,
-      list: [
-        { name: 'John', id: 0 },
-        { name: 'Joao', id: 1 },
-        { name: 'Jean', id: 2 },
-      ],
+      list: [],
       dragging: false,
     }
   },
@@ -77,13 +73,22 @@ export default {
     checkMove: function(e) {
       window.console.log('Future index: ' + e.draggedContext.futureIndex)
     },
+    deleteCategory: function(id) {
+      const index = this.list.findIndex(product=> product.id === id)
+      this.list.splice(index, 1)
+    },
     addCategory: function() {
-      this.list.push({
-        'name': document.querySelector("#newCategory").value,
-        'type': 'category',
-        'products': [],
-        'coverImg' : ''
-      });
+      const input = document.querySelector("#newCategory").value
+      if(input.length > 4) {
+        this.list.push({
+          'name': input,
+          'type': 'category',
+          'products': [],
+          'id': this._uid += 1
+        })
+        return
+      }
+      alert('Please enter a category name')
     },
   },
 }

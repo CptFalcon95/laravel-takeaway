@@ -1944,16 +1944,7 @@ var id = 1;
   data: function data() {
     return {
       enabled: true,
-      list: [{
-        name: 'John',
-        id: 0
-      }, {
-        name: 'Joao',
-        id: 1
-      }, {
-        name: 'Jean',
-        id: 2
-      }],
+      list: [],
       dragging: false
     };
   },
@@ -1966,13 +1957,26 @@ var id = 1;
     checkMove: function checkMove(e) {
       window.console.log('Future index: ' + e.draggedContext.futureIndex);
     },
-    addCategory: function addCategory() {
-      this.list.push({
-        'name': document.querySelector("#newCategory").value,
-        'type': 'category',
-        'products': [],
-        'coverImg': ''
+    deleteCategory: function deleteCategory(id) {
+      var index = this.list.findIndex(function (product) {
+        return product.id === id;
       });
+      this.list.splice(index, 1);
+    },
+    addCategory: function addCategory() {
+      var input = document.querySelector("#newCategory").value;
+
+      if (input.length > 4) {
+        this.list.push({
+          'name': input,
+          'type': 'category',
+          'products': [],
+          'id': this._uid += 1
+        });
+        return;
+      }
+
+      alert('Please enter a category name');
     }
   }
 });
@@ -42025,7 +42029,17 @@ var render = function() {
                   _vm._v("\n        " + _vm._s(element.name) + "\n        "),
                   _c("button", [_vm._v("Add Product")]),
                   _vm._v(" "),
-                  _c("button", [_vm._v("Delete Category")])
+                  _c(
+                    "button",
+                    {
+                      on: {
+                        click: function($event) {
+                          return _vm.deleteCategory(element.id)
+                        }
+                      }
+                    },
+                    [_vm._v("Delete Categorys")]
+                  )
                 ]
               )
             }),
