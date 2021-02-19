@@ -42,6 +42,7 @@
     },
     "homepage": "https://github.com/CptFalcon95/laravel-takeaway#readme",
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.2",
         "vue": "^2.6.12",
         "vuedraggable": "^2.24.3"
     }

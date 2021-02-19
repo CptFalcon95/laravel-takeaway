@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('foodmenu.editor.menu');
 });
+
+Route::get('/menu-editor', '\App\Http\Controllers\MenuEditorController@index');
