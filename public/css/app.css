@@ -12527,13 +12527,18 @@ body {
   padding: 1rem;
 }
 
-.container-lp {
+#app {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.search-for-location img,
+.search-and-cart img,
+.pay-and-deliver img {
+  width: 100%;
+  height: 100%;
 }
 
 #restaurant-banner {

@@ -6,16 +6,17 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-@import 'vendor/homestyling';
-
-// Form for the Homepage
-@import 'homepage/homeform';
 
 // Header
 @import 'components/header';
 
+@import 'homepage/homestyling';
+
+// Form for the Homepage
+@import 'homepage/homeform';
+
 // Restaurant Banner
-@import 'components/restaurantpage/restaurantstyling';
+@import 'restaurantpage/restaurantstyling';
 
 // Footer
 @import 'components/footer';
