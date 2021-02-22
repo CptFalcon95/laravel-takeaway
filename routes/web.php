@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('menu/builder', 'App\Http\Controllers\MenuBuilderController@index');
+Route::post('menu/builder/add-category', 'App\Http\Controllers\MenuBuilderController@addCategory');
