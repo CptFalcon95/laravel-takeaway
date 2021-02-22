@@ -1,5 +1,5 @@
 <div class="">
-    <h3 class="text-center">Find restaurants nearby</h3>
+    <h3 class="text-center text-white">Find restaurants nearby</h3>
     <form method="POST" action="{{route('serviceable')}}">
         @csrf
 

@@ -23,6 +23,9 @@
         @yield('content')        
     </main>
 
+    <div class="how-it-works">
+        @yield('how-it-works')
+    </div>
     {{-- @include('includes.footer') --}}
 
     @yield('scripts')
