@@ -6,3 +6,19 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import 'vendor/homestyling';
+
+// Form for the Homepage
+@import 'homepage/homeform';
+
+// Header
+@import 'components/header';
+
+// Restaurant Banner
+@import 'components/restaurantpage/restaurantstyling';
+
+// Footer
+@import 'components/footer';
+
+// jQuery
+@import '~jquery-ui/themes/base/all.css';

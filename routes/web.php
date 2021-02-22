@@ -14,17 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages/home', [
+        'page' => 'home'
+    ]);
 });
 
-Route::get('contact', function () {
-    return view('contact');
+Route::get('restaurant', function () {
+    return view('pages/restaurant', [
+        'page' => 'restaurant'
+    ]);
 });
 
-Route::get('portfolio', function () {
-    return view('portfolio');
-});
-
-Route::get('team', function () {
-    return view('team');
-});
+Route::post('places', 'App\Http\Controllers\FormController@serviceable')->name('serviceable');

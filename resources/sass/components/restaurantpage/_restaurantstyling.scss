@@ -1,0 +1,40 @@
+#restaurant-banner {
+    background-image: url('img/slideshow3.jpg');
+    /* Set a specific height */
+    height: 15vh;
+    width: 100vw;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+ .menu-container{
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
+ } 
+
+ .menu-content{
+     position: relative;
+     display: inline-flex;
+     flex-direction: column;
+     border-radius: .5rem;
+     box-shadow: 0 2px 4px rgba(3,74,40,.15);
+     padding: .75rem;
+ }
+
+ .menu-img{
+     width: 100px;
+     align-self: center;
+     height: 100px;
+ }
+
+ .menu-button{
+     position: absolute;
+     bottom: 15px;
+     right: 15px;
+     display: flex;
+     padding: .625rem .813rem;
+     border-radius: .5rem 0 .5rem 0;
+ }
