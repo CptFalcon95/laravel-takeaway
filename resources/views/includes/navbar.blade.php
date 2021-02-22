@@ -1,5 +1,5 @@
 	<!--- Navigation -->
-	<nav class="navbar navbar-dark navbar-expand-md">
+	<nav class="navbar navbar-dark navbar-expand-md landingpage">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="index.php">
 				<img src="img/logo3.png"></a> 

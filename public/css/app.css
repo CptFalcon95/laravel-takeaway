@@ -12504,8 +12504,8 @@ body {
 }
 
 .btn-purple {
-  border-color: #8366B0;
-  background-color: #8366B0;
+  border-color: #8366b0;
+  background-color: #8366b0;
   color: white;
   margin: 1rem;
 }
@@ -12527,11 +12527,25 @@ body {
   padding: 1rem;
 }
 
-#app {
+nav.landingpage {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
+  width: 100%;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-search-wrapper {
+  padding: 0 25px;
+  width: 100%;
+}
+
+.home-search-wrapper > div {
+  width: 100%;
 }
 
 .search-for-location img,

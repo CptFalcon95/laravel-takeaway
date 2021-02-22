@@ -13,7 +13,7 @@ body {
   background-size: cover;
   background-position: center;
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -21,8 +21,8 @@ body {
 }
 
 .btn-purple {
-  border-color: #8366B0;
-  background-color: #8366B0;
+  border-color: #8366b0;
+  background-color: #8366b0;
   color: white;
   margin: 1rem;
 }
@@ -39,6 +39,11 @@ body {
 
 /*-- Extra Bootstrap Column Padding --*/
 
-[class*="col-"] {
+[class*='col-'] {
   padding: 1rem;
+}
+
+nav.landingpage {
+  position: absolute;
+  width: 100%;
 }
