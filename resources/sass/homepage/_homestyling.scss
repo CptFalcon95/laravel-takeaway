@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700');
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #505962;
+  // position: relative;
+  padding-bottom: 30px;
+  // min-height: 100vh;
+}
+
+.home-bg {
+  background-image: url('img/slideshow1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.btn-purple {
+  border-color: #8366b0;
+  background-color: #8366b0;
+  color: white;
+  margin: 1rem;
+}
+.btn-purple:hover,
+.btn-purple:focus {
+  border-color: #594781;
+  background-color: #594781;
+  color: white;
+}
+
+.feature img {
+  padding: 1.5rem;
+}
+
+/*-- Extra Bootstrap Column Padding --*/
+
+[class*='col-'] {
+  padding: 1rem;
+}
+
+nav.landingpage {
+  position: absolute;
+  width: 100%;
+}

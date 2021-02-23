@@ -1,0 +1,27 @@
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-search-wrapper {
+  padding: 0 25px;
+  width: 100%;
+
+  > div {
+    width: 100%;
+  }
+}
+
+
+.search-for-location img,
+.search-and-cart img,
+.pay-and-deliver img {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+}
