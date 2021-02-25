@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-<<<<<<< HEAD
     return view('pages.home.home', [
         'page' => 'home'
     ]);
@@ -19,9 +18,7 @@ Route::get('restaurant', function () {
 });
 
 Route::post('places', 'App\Http\Controllers\FormController@serviceable')->name('serviceable');
-=======
     return view('takeaway');
 });
 
 Route::post('/filters', 'App\Http\Controllers\FilterController@filter')->name('filter');
->>>>>>> feature/restaurants
