@@ -15,9 +15,9 @@ class CreateBusinessTable extends Migration
     {
         Schema::create('businesses', function (Blueprint $table) {
             $table->id();
-            $table->char('name', 25);
+            $table->char('name', 50);
             $table->char('bio', 200);
-            $table->char('address', 25);
+            $table->char('address', 100);
             $table->char('est-delivery', 8);
             $table->char('iban', 18);
         });

@@ -1,4 +1,4 @@
-<div class="input-group mx-auto mb-3">
+<div class="input-group mx-auto mb-3" style="">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
