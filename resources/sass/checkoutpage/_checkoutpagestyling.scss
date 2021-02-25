@@ -1,5 +1,28 @@
 .container {
-    max-width: 960px;
+  max-width: 960px;
+}
+
+.lh-condensed {
+  line-height: 1.25;
+}
+
+.cart-item {
+  position: relative;
+
+  >div {
+    display: inline-block;
   }
-  
-  .lh-condensed { line-height: 1.25; }
+
+  &-content {}
+
+  &-price {
+    right: 15px;
+    position: absolute;
+    top: 15px;
+
+
+    &--green {}
+
+    &--red {}
+  }
+}

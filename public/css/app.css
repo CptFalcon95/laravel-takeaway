@@ -12687,4 +12687,18 @@ th:last-child {
   line-height: 1.25;
 }
 
+.cart-item {
+  position: relative;
+}
+
+.cart-item > div {
+  display: inline-block;
+}
+
+.cart-item-price {
+  right: 15px;
+  position: absolute;
+  top: 15px;
+}
+
 
