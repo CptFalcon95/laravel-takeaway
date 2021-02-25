@@ -7,11 +7,11 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link <?php if($page=='home') {echo 'active';}?>
+						<a class="nav-link text-white<?php if($page=='home') {echo 'active';}?>
 						 href="index.php">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link <?php if($page=='portfolio') {echo 'active';}?>
+						<a class="nav-link text-white<?php if($page=='restaurant') {echo 'active';}?>
 						href="portfolio.php">Restaurant's page</a>
 					</li>
 					<!-- <li class="nav-item">

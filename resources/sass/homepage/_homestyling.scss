@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700');
 
-body {
+html{
+  font-size: 16px;
   font-family: 'IBM Plex Sans', sans-serif;
+  color: #000;
+}
+
+body{
   color: #505962;
   // position: relative;
   padding-bottom: 30px;
   // min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  width: 100%;
+  border: 5px dashed red;
 }
 
-.home-bg {
-  background-image: url('img/slideshow1.jpg');
+.home-bg{
+  background-image: url('images/menu.jpg');
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -19,8 +28,7 @@ body {
   left: 0;
   z-index: -1;
 }
-
-.btn-purple {
+.btn-purple{
   border-color: #8366b0;
   background-color: #8366b0;
   color: white;

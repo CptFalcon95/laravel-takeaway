@@ -20,8 +20,20 @@ Route::get('/', function () {
 });
 
 Route::get('restaurant', function () {
-    return view('pages.restaurant', [
+    return view('pages.restaurant.restaurant', [
         'page' => 'restaurant'
+    ]);
+});
+
+Route::get('cart', function () {
+    return view('pages.cart.cart', [
+        'page' => 'cart'
+    ]);
+});
+
+Route::get('checkout', function () {
+    return view('pages.checkout.checkout', [
+        'page' => 'checkout'
     ]);
 });
 
