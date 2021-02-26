@@ -13,7 +13,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
-<body>
+<body class="home">
     {{-- Home background image --}}
     <div class="home-bg"></div>
 

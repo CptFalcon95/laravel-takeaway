@@ -12492,13 +12492,12 @@ html {
   color: #000;
 }
 
-body {
+body.home {
   color: #505962;
   padding-bottom: 30px;
-  background-color: white;
+  background-color: #ff8000;
   min-height: 100vh;
   width: 100%;
-  border: 5px dashed red;
 }
 
 .home-bg {
@@ -12539,7 +12538,26 @@ body {
 
 nav.landingpage {
   position: absolute;
-  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 15px;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+nav.landingpage .navbar-brand,
+nav.landingpage img {
+  padding: 0;
+}
+
+.home-search-wrapper form {
+  max-width: 750px;
+}
+
+.home-search-wrapper form input,
+.home-search-wrapper form select,
+.home-search-wrapper form .btn {
+  border-radius: 0;
 }
 
 #app {

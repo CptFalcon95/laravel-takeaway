@@ -6,15 +6,14 @@ html{
   color: #000;
 }
 
-body{
+body.home{
   color: #505962;
   // position: relative;
   padding-bottom: 30px;
   // min-height: 100vh;
-  background-color: rgb(255, 255, 255);
+  background-color: #ff8000;
   min-height: 100vh;
   width: 100%;
-  border: 5px dashed red;
 }
 
 .home-bg{
@@ -53,5 +52,21 @@ body{
 
 nav.landingpage {
   position: absolute;
-  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 15px;
+  background-color: rgba(51,51,51,.5);
+  .navbar-brand, img {
+    padding: 0;
+  }
+}
+
+.home-search-wrapper {
+  form {
+    max-width: 750px;
+    input, select, .btn {
+      border-radius: 0;
+    }
+  }
 }
