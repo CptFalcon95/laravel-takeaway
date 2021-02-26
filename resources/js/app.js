@@ -6,6 +6,5 @@
 
 require('./bootstrap');
 require('./jquery');
-
-require('./components/menuBuilder');
 import 'jquery-ui/ui/widgets/sortable.js';
+require('./components/menuBuilder');

@@ -1,0 +1,11 @@
+.category {
+    &-products {
+        .row {
+            max-height: 120px;
+        }
+
+        .card-body {
+            padding: 0 20px;
+        }
+    }
+}
