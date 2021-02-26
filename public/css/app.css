@@ -12486,14 +12486,23 @@ a.text-dark:focus {
   }
 }
 
-body {
+html {
+  font-size: 16px;
   font-family: "IBM Plex Sans", sans-serif;
+  color: #000;
+}
+
+body {
   color: #505962;
   padding-bottom: 30px;
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+  border: 5px dashed red;
 }
 
 .home-bg {
-  background-image: url(/images/slideshow1.jpg?75f2873ea6df5258f15004f2c237be63);
+  background-image: url(/images/menu.jpg?60ad887a8d514986132883f561d29ea3);
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -12537,12 +12546,12 @@ nav.landingpage {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .home-search-wrapper {
   padding: 0 25px;
-  width: 100%;
+  width: 80%;
 }
 
 .home-search-wrapper > div {
@@ -12608,6 +12617,75 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.cart-page {
+  margin: 80px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #38c172;
+  font-weight: normal;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: #ff523b;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 400px;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.lh-condensed {
+  line-height: 1.25;
 }
 
 
