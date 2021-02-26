@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('menu/builder', 'App\Http\Controllers\MenuBuilderController@index');
-Route::post('menu/builder/add-category', 'App\Http\Controllers\MenuBuilderController@addCategory');
+Route::post('menu/builder/add-category', 'App\Http\Controllers\CategoryController@store');
 
 Route::get('restaurant', function () {
     return view('pages.restaurant', [
